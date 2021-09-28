@@ -21,7 +21,7 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag miguel1993/docker-docker-rtl433-mqtt
+      run: docker build . --file Dockerfile --tag miguel1993/docker-rtl433-mqtt
       
     - name: Docker Push
-      run: docker push ${{secrets.DOCKER_USER}}/docker-docker-rtl433-mqtt
+      run: docker push ${{secrets.DOCKER_USER}}/docker-rtl433-mqtt

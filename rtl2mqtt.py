@@ -9,7 +9,7 @@ import os
 import json
 import re
 
-from /config/config import *
+from config import *
 
 rtl_433_cmd = "/usr/local/bin/rtl_433 -f 868390000 -F json"
 
